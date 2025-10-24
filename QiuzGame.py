@@ -81,10 +81,20 @@ else:
     print("Incorrect!")
     wrong += 1
 
+per=(score/9)*100
+
 print("You got " + str(score) + " questions correct")
-print("You got " + str((score/9)*100) + "%.")
+print("You got " + str(per) + "%.")
 print("You got " + str(wrong) + " questions wrong")
-print("You got " + str((wrong/9)*100) + "%.")
+
+if per>=80:
+    print("Excellent! 🎉")
+elif per>=50:
+    print("Good! 👍")
+else:
+    print("Try again! 😅 Keep learning! ")
+
+
 
 
 
